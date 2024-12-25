@@ -445,7 +445,7 @@ ngx_rtmp_exec_init_main_conf(ngx_conf_t *cf, void *conf)
 
 #if !(NGX_WIN32)
     if (emcf->kill_signal == NGX_CONF_UNSET) {
-        emcf->kill_signal = SIGKILL;
+        emcf->kill_signal = SIGTERM;
     }
 #endif
 
